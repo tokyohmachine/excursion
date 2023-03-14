@@ -1,0 +1,150 @@
+
+html {
+    font-size: 16px;
+  }
+  
+  
+  body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    color: white;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    
+  }
+  
+ 
+  .ctc {
+    margin-bottom: 20px;
+    
+  }
+  
+  .text-center {
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .ctc h1 {
+    font-family: Verdana;
+    font-size: 50px;
+    font-weight: normal;
+    
+  }
+  
+  #description {
+    margin-top: 30px;
+   
+  }
+
+  a {
+    color: Aquamarine;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* VIDEO */
+  .phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+
+  .phone-container video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+    
+  }
+  
+
+/* MIDDLE */
+  .middle {
+    margin-top: 30px;
+    
+  }
+
+  .middle h1 {
+    font-family: Verdana;
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  
+
+  .middle p {
+    font-family: Verdana;
+    font-size: 21px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /*  IMAGE */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+	  display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  /* FOOTER */
+  .foot-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer h1{
+    font-family: Verdana;
+    font-size: 42px;
+    
+  }
+
+  #fp {
+    margin-top: 30px;
+   
+  }
+
+  .cpr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-right: 0.5rem;
+  }
+
+
+  .cpr span{
+    display: flex;
+    justify-content: right;
+    color: gray;
+    font-size: 21px;
+  }
