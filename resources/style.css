@@ -2,8 +2,7 @@
 html {
     font-size: 16px;
   }
-  
-  
+
   body::before {
     content: "";
     position: fixed;
@@ -14,88 +13,105 @@ html {
     height: 100%;
     background-color: black;
   }
-  
+
   body {
     margin: 0;
     font-family: Verdana, sans-serif;
     color: white;
   }
-  
+
   .container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
-    
+
   }
-  
- 
-  .ctc {
+
+
+  #title{
     margin-bottom: 20px;
-    
+
   }
-  
+
   .text-center {
     text-align: center;
     font-weight: 300;
   }
-  
-  .ctc h1 {
+
+  .title {
     font-family: Verdana;
-    font-size: 50px;
+    font-size: 42px;
     font-weight: normal;
-    
+
   }
-  
+
   #description {
     margin-top: 30px;
-   
+
   }
 
   a {
     color: Aquamarine;
     font-size: 16px;
+    margin-bottom: 10px;
   }
-  
+
   h1, p {
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
-  
-  /* VIDEO */
-  .phone-container {
+
+  /* VIDEO  */
+  .video-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+
   }
 
-  .phone-container video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  video {
     object-fit: contain;
     overflow-clip-margin: content-box;
     overflow: clip;
-    
-    
   }
-  
+/* MEDIA QUERIES */
+/* MOBILE */
+/* styles for screens less than or equal to 798px wide */
+@media only screen and (max-width: 798px) {
+  .text-center,
+  .secondtitle,
+  .ftitle{
+    font-size: 1.875rem !important;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .description,
+  .description-two,
+  .fp{
+    font-size: 1rem !important;
+  }
+  .copyright {
+    font-size: .9rem !important;
+  }
+}
+
 
 /* MIDDLE */
-  .middle {
+
+  #secondtitle {
     margin-top: 30px;
-    
   }
 
-  .middle h1 {
+  .secondtitle {
     font-family: Verdana;
     font-size: 42px;
     margin-bottom: 30px;
   }
-  
 
-  .middle p {
+  #description-two {
+    margin-bottom: 30px;
+  }
+
+  .description-two {
     font-family: Verdana;
     font-size: 21px;
     color: gray;
@@ -104,45 +120,48 @@ html {
   }
 
   /*  IMAGE */
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   img {
-	  display: block;
     max-width: 100%;
+    display: block;
     height: auto;
-    margin-bottom: 25px;
+    margin: 0 auto 30px;
   }
 
   /* FOOTER */
+  #image {
+  margin-bottom: 30px;
+  }
+
   .foot-icon {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .footer h1{
+  #ftitle {
+    margin-bottom: 30px;
+  }
+
+  .ftitle {
     font-family: Verdana;
     font-size: 42px;
-    
+
   }
 
   #fp {
     margin-top: 30px;
-   
+
   }
 
-  .cpr {
+  #cpr {
     margin-top: 30px;
     margin-bottom: 20px;
     padding-right: 0.5rem;
   }
 
 
-  .cpr span{
+  .copyright{
     display: flex;
     justify-content: right;
     color: gray;
